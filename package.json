@@ -1,0 +1,19 @@
+{
+  "name": "prompt-crawl",
+  "version": "0.1.0",
+  "description": "Offline crawler that treats prompt clauses as typed decisions with heuristic risk scores",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "prompt-crawl": "./bin/prompt-crawl.js"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "demo": "node bin/prompt-crawl.js fixtures/sample-prompt.md --html report/index.html --json report/graph.json",
+    "start": "node bin/prompt-crawl.js"
+  },
+  "keywords": ["prompt", "crawler", "heuristic", "offline"],
+  "license": "MIT"
+}
